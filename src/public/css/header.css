@@ -1,0 +1,75 @@
+.header {
+  background-color:  	#5f4c4c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7%;
+}
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+.logo a{
+  color: white;
+}
+.open {
+  display: none;
+}
+.close {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav li {
+  list-style: none;
+  padding: 5px 10px;
+}
+
+.nav li a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+.api_docs a{
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 8px 12px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+  }
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    background-color:  	#5f4c4c;
+    border-radius: 5%;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 25%;
+    padding: 15px;
+    z-index: 9999;
+  }
+  .open {
+    display: block;
+  }
+  .close.show {
+    display: block;
+  }
+  .open.hide {
+    display: none;
+  }
+}
+@media(max-width:545px){
+  .nav.active{
+    width: 40%;
+  }
+}

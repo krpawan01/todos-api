@@ -1,0 +1,31 @@
+@media (max-width: 1250px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (max-width: 1070px) {
+  html {
+    /* font-size: 92%; */
+  }
+}
+@media (max-width: 930px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 78%;
+  }
+}
+
+@media (max-width: 609px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 436px) {
+  html {
+    font-size: 60%;
+  }
+}

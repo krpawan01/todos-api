@@ -1,0 +1,50 @@
+{
+  "name": "api_project",
+  "version": "1.0.0",
+  "description": "Explore our comprehensive API services including Todo List API, Contact API, Posts API, and Book API. Perfect for developers to integrate and practice building dummy websites with powerful, user-friendly endpoints. Enhance your applications with our secure and high-performance APIs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Task Management API",
+    "Todo List API",
+    "Todo API Integration",
+    "Posts API",
+    "Blog Posts API",
+    "Contact List API",
+    "Contacts API Integration",
+    "Book API",
+    "Library API",
+    "Book Catalog API",
+    "API for Task Management",
+    "API for Todo Lists",
+    "API for Blog Posts",
+    "API for Contact Management",
+    "API for Book Information",
+    "JSON API for Todos",
+    "RESTful API for Posts",
+    "Developer API for Contacts",
+    "Books Data API",
+    "Efficient Task API",
+    "Secure Contacts API",
+    "Scalable Todo API",
+    "Simple Book API",
+    "Productivity API",
+    "Data Management API"
+  ],
+  "type": "module",
+  "author": "mr pk",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^8.3.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}

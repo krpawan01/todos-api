@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List API | Task Management API</title>
+    <meta name="description" content="Integrate our Todo List API to enhance your task management application with robust and secure features.">
+    <!-- this is for code color css and js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css"
+  />
+<!--  layout css -->
+    <link rel="stylesheet" href="/css/layout.css" />
+
+   <!-- all css handle -->
+    <%- style %>
+    <!-- media css handle -->
+    <link rel="stylesheet" href="/css/media.css" />
+  </head>
+  <body>
+    <%- include('_header'); %> <%- body %> <%- include('_footer'); %> <%- script
+    %>
+  </body>
+</html>

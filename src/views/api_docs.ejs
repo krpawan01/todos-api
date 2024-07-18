@@ -1,0 +1,410 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/apidocs.css" />
+  </head>
+  <body>
+    <main class="apidocs">
+      <div id="docsmenu">
+        <span>API</span> <img src="/img/menu.png" alt="" />
+      </div>
+      <aside class="docsaside" id="docList">
+        <div id="docsclose"><img src="/img/close.png" alt="close image" /></div>
+        <div class="asideheadling">
+          <h1>All API List</h1>
+        </div>
+        <details>
+          <summary id="apiKey">learn API</summary>
+          <li><a href="#fetch">fetch</a></li>
+          <li><a href="#axios">axios</a></li>
+        </details>
+        <!-- <details> -->
+        <summary id="todoKey" class="asideTitle">Todo</summary>
+        <summary id="postKey" class="asideTitle">Posts</summary>
+        <summary id="bookKey" class="asideTitle">Book</summary>
+        <summary id="contactKey" class="asideTitle">Contact</summary>
+      </aside>
+      <section class="apilist">
+        <article id="apiDummy">
+          <div class="articals">
+            <h1 class="topHeadling">Learn API</h1>
+            <div class="codePrev">
+              <p class="para">
+                <span>fetch</span> and <span>axios</span> are both javaScript
+                libraries used for making <span>HTTP requests </span> from a web
+                browser or a Node.js environment.
+              </p>
+              <p class="para">
+                They both perform same action, but they have some differences in
+                how they have some differenes in how they work and their
+                features.
+              </p>
+              <p class="para">
+                Let's understand the difference between both method.
+              </p>
+              <ul class="typeApiList">
+                <li><a href="#fetch">fetch</a></li>
+                <li><a href="#axios">axios</a></li>
+              </ul>
+              <h1 class="nameHeading" id="fetch">fetch()</h1>
+              <p class="para">
+                <span>fetch</span> is a native brower <span>API</span>, which
+                means it's built into modern web browers. You don't need to
+                install any additional to use it.
+              </p>
+              <p class="para">
+                It used <span>Promises</span>, which are a way to handle
+                asynchronous operations in javaScript. This means you cna use
+                <span>.then()</span> and <span>.catch()</span> to handle the
+                response or errors respectively.
+              </p>
+              <pre>
+        <code class="language-javascript">
+  fetch('https://api.example.com/data')
+  .then(response => response.json())
+   .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+                    </code>
+                  </pre>
+            </div>
+            <div class="codePrev">
+              <h3>output 👇</h3>
+              <pre>
+                    <code class="language-javascript">
+ [
+  {
+      "id": 1,
+      "title": "iPhone 9",
+       "description": "An apple mobile ",
+      ....
+     }
+   {
+       "id": 2,
+       "title": "iPhone 13",
+       "description": "An apple mobile ",
+       ....
+     }
+     ...
+     ]
+                    </code>
+                  </pre>
+            </div>
+            <div class="codePrev" id="axios">
+              <h1 class="nameHeading">AXIOS()</h1>
+              <p class="para">
+                <span>Axios</span> is a popular external library that you need
+                to install separtely in you project using <span>npm</span> or
+                <span>yarn</span>.
+              </p>
+              <p class="para">
+                Like fetch, Axios is also Promise-based, making it easy to work
+                with asychronous requests.
+              </p>
+              <pre>
+                    <code class="language-javascript">
+   const axios = require('axios');
+   // or
+   // import axios from 'axios';
+  axios.get('https://api.example.com/data')
+  .then(response => {
+    // Handle successful response
+    console.log(response.data);
+  })
+  .catch(error => {
+    // Handle error
+    console.error('Error fetching data:', error);
+   });
+                    
+                    </code>
+                  </pre>
+
+              <p class="para">
+                For other HTTP methods like POST, PUT, DELETE, etc., you would
+                use axios.post, axios.put, axios.delete, respectively, and
+                provide the appropriate data if needed.
+              </p>
+              <p class="para">
+                Axios provides additional features like built-in support for
+                <span>interceptors</span>, request and response transformations,
+                automatic <span>json data parsing</span>, and more.
+              </p>
+              <p class="para">
+                Axios wroks not only in web browsers but also in
+                <span>Node.js</span> environment, making it versatile for both
+                frontend and backend development.
+              </p>
+            </div>
+            <div class="codePrev">
+              <h3>output 👇</h3>
+              <pre>
+                    <code class="language-javascript">
+ [
+  {
+      "id": 1,
+      "title": "iPhone 9",
+       "description": "An apple mobile ",
+      ....
+     }
+   {
+       "id": 2,
+       "title": "iPhone 13",
+       "description": "An apple mobile ",
+       ....
+     }
+     ...
+     ]
+                    </code>
+                  </pre>
+            </div>
+            <hr />
+            <div class="officalWebsite">
+              <h1>
+                for learn more go to offical website Link is given blow 👇
+              </h1>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+                    >fetch</a
+                  >
+                </li>
+                <li><a href="https://axios-http.com/docs/example">axios</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article id="todo" class="hide">
+          <div class="articals">
+            <h1 class="topHeadling">TODOS API</h1>
+            <div class="codePrev">
+              <p class="para">
+                Welcome to the Todos API, your ultimate solution for efficient
+                task management. Our API offers a seamless interface for
+                accessing and managing your todo lists, making it a perfect fit
+                for developers seeking to enhance their applications with robust
+                task management features.
+              </p>
+              <p class="para">
+                <div class="api_url">
+                  <h1>
+                    Link:- <a href="/api/todos">https://api.example.com/data</a>
+                  </h1>
+                </div>
+              </p>
+              <p class="para">
+                Here's a simple example of a basic todo GET request:
+              </p>
+              <!-- <h1 id="get" class="nameHeading">get()</h1> -->
+              <pre>
+        <code class="language-javascript">
+  fetch('https://api.example.com/data')
+  .then(response => response.json())
+   .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+                    </code>
+                  </pre>
+            </div>
+            <div class="codePrev">
+              <h3>output 👇</h3>
+              <pre>
+                    <code class="language-javascript">
+ [
+  {
+    "_id": "6665424ccc33c386eb209c2c",
+    "id": 2,
+    "todo": "Memorize the fifty states and their capitals",
+    "completed": false,
+    "userId": 48
+  },
+  {
+    "_id": "6665424ccc33c386eb209c2f",
+    "id": 5,
+    "todo": "Solve a Rubik's cube",
+    "completed": false,
+    "userId": 31
+  },
+  ...
+  ...
+]
+                    </code>
+                  </pre>
+                  <p class="para">
+                    Discover the power of the Todos API for effortless task management. With user-friendly, high-performance, and secure features, our API is designed to help developers seamlessly integrate efficient task management into their applications. Start using the Todos API today to enhance your productivity and workflow.
+                  </p>
+                </div>
+          </div>
+        </article>
+        <article id="posts_data" class="hide">
+          <div class="articals">
+            <h1 class="topHeadling">POST API</h1>
+            <div class="codePrev">
+              <p class="para">
+                Welcome to the POST API guide. Our API enables developers to create new data entries seamlessly, providing a robust and efficient interface for data management and integration into applications.
+              </p>
+              
+              <!-- <h2>Here we provided you todo api list</h2> -->
+              <p class="para">
+                <div class="api_url">
+                  <h1>
+                    Link:- <a href="/api/posts">https://api.example.com/data</a>
+                  </h1>
+                </div>
+              </p>
+              <p class="para">Here's a simple example of a basic post API GET request:</p>
+
+              <!-- <h1 id="get" class="nameHeading">get()</h1> -->
+              <pre>
+        <code class="language-javascript">
+  fetch('https://api.example.com/data')
+  .then(response => response.json())
+   .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+                    </code>
+                  </pre>
+                  
+            </div>
+            <div class="codePrev">
+              <p class="para">output 👇</p>
+              <pre>
+                    <code class="language-javascript">
+ [
+  {
+    "_id": "666542e8cc33c386eb211f8e",
+    "userId": 6,
+    "id": 3,
+    "title": "qui et at rerum necessitatibus",
+    "body": "aut est omnis dolores\nneque rerum quod ea rerum velit pariatur beatae excepturi\net provident voluptas corrupti\ncorporis harum reprehenderit dolores eligendi"
+  },
+  {
+    "_id": "666542e8cc33c386eb211f92",
+    "userId": 7,
+    "id": 7,
+    "title": "nature's calm",
+    "body": "there's something profoundly peaceful about walking through a quiet forest\nthe kind of peace that reaches deep into your soul"
+  },
+   ...
+ ]
+                    </code>
+                  </pre>
+                  <p class="para">
+                    Our POST API is designed to help developers easily add new records to their applications. With high performance, security, and user-friendly features, our API ensures a smooth and reliable data creation process. Whether you’re building a new app or enhancing an existing one, our POST API offers the tools you need for efficient data management.
+                  </p>
+                  <p class="para">
+                    Discover the capabilities of our POST API today and see how it can streamline your development process. With our comprehensive documentation and powerful features, you’ll be able to integrate data creation functionalities seamlessly into your projects, boosting productivity and workflow efficiency.
+                  </p>
+            </div>
+          </div>
+        </article>
+        <article id="book_data" class="hide">
+          <div class="articals">
+            <h1 class="topHeadling">BOOK API</h1>
+            <div class="codePrev">
+              <p class="para">
+                Welcome to the Book API guide. Our API provides a seamless interface for creating, managing, and accessing book data, making it an ideal solution for developers looking to enhance their applications with comprehensive book management features.
+              </p>
+              <p class="para">
+                <div class="api_url">
+                  <h1>
+                    Link:- <a href="/api/books">https://api.example.com/data</a>
+                  </h1>
+                </div>
+              </p>
+              <h3>Here's a simple example of a basic todo GET request:</h3>
+              <pre>
+        <code class="language-javascript">
+  fetch('https://api.example.com/data')
+  .then(response => response.json())
+   .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+                    </code>
+                  </pre>
+            </div>
+            <div class="codePrev">
+              <h3>output 👇</h3>
+              <pre>
+                    <code class="language-javascript">
+ [
+  {
+      "id": 1,
+      "title": "iPhone 9",
+       "description": "An apple mobile ",
+      ....
+     }
+   {
+       "id": 2,
+       "title": "iPhone 13",
+       "description": "An apple mobile ",
+       ....
+     }
+     ...
+     ]
+                    </code>
+                  </pre>
+                  <p class="para">
+                    Our Book API is designed to help developers easily integrate book data into their applications. With high performance, security, and user-friendly features, our API ensures a smooth and efficient process for managing book records. Whether you're building a new library app or enhancing an existing platform, our Book API offers the tools you need for effective book data management.
+                  </p>
+                  <p class="para">
+                    Discover the power of our Book API today and see how it can streamline your development process. With our comprehensive documentation and robust features, you'll be able to integrate book management functionalities seamlessly into your projects, enhancing productivity and user experience.
+                  </p>
+            </div>
+          </div>
+        </article>
+        <article id="contact_data" class="hide">
+          <div class="articals">
+            <h1 class="topHeadling">CONTACT List API</h1>
+            <div class="codePrev">
+              <p class="para">
+                Welcome to the Contact List API guide. Our API provides developers with a robust solution for efficiently managing contact information within their applications. Whether you're developing a CRM system, communication app, or any platform requiring organized contact data, our Contact List API offers comprehensive features for seamless integration.
+              </p>
+              <p class="para">
+                <div class="api_url">
+                  <h1>
+                    Link:- <a href="/api/contacts">https://api.example.com/data</a>
+                  </h1>
+                </div>
+              </p>
+              <h3>Here's a simple example of a basic todo GET request:</h3>
+              <pre>
+        <code class="language-javascript">
+  fetch('https://api.example.com/data')
+  .then(response => response.json())
+   .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+                    </code>
+                  </pre>
+            </div>
+            <div class="codePrev">
+              <h3>output 👇</h3>
+              <pre>
+                    <code class="language-javascript">
+ [
+  {
+      "id": 1,
+      "title": "iPhone 9",
+       "description": "An apple mobile ",
+      ....
+     }
+   {
+       "id": 2,
+       "title": "iPhone 13",
+       "description": "An apple mobile ",
+       ....
+     }
+     ...
+     ]
+                    </code>
+                  </pre>
+                  <p class="para">
+                    With capabilities for creating, updating, searching, and organizing contacts, our API ensures a streamlined process. Secure authentication methods and flexible data handling options further enhance its usability and reliability. Simplify your contact management tasks and improve user engagement with our developer-friendly Contact List API.
+                  </p>
+                  <p class="para">
+                    Explore the Contact List API today to empower your applications with efficient contact management capabilities. With our clear documentation and versatile API endpoints, you can enhance user interactions and operational efficiency effortlessly. Integrate the Contact List API and elevate your application's functionality with ease.
+                  </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="/js/apidocs.js"></script>
+  </body>
+</html>
